@@ -2,21 +2,26 @@ const question = document.querySelector(".question")
 const gif = document.querySelector(".gif")
 const yesBtn = document.querySelector(".yes-btn")
 const noBtn = document.querySelector(".no-btn")
+const followBtn = document.querySelector("follow-btn")
 
 yesBtn.addEventListener("click", ()=> {
-  question.innerHTML = "Yayy I Love You";
-  gif.src="https://i.pinimg.com/originals/fc/50/45/fc504576b225dddb40e38ba7c05a5bf4.gif"
+  question.innerHTML = "Wow You is Very Happy";
+  gif.src="https://i.pinimg.com/originals/86/2e/c7/862ec75ee522180c764122a218eff794.gif"
+})
+
+followBtn.addEventListener("click", ()=> {
+  question.innerHTML = "Thank You So Much";
+  gif.src="https://i.pinimg.com/originals/b8/f3/f3/b8f3f38721dbd37544ccc0bb90fce117.gif"
 })
 
 noBtn.addEventListener("mouseover", ()=> {
-  const noBtnRent = noBtn.getBoundingclientRect();
-  const maxX = window.innerWidth - noBtnRect.width;
+  const noBtnRent = noBtn.gatBoundingclientRect();
+  const maxX = window.innerWidth - noBtnRent.width;
   const maxY = window.innerHeight - noBtnRent.height;
 
   const randomX = Math.floor(Math.random() * maxX)
   const randomY = Math.floor(Math.random() * maxY)
 
-  noBtn.style.left = randomX + "px";
-  noBtn.style.top = randomY + "px";
-
+  noBtn.computedStyleMap.left
 })
+
